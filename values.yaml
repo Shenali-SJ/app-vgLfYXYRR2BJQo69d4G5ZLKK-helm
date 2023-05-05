@@ -1,0 +1,22 @@
+projectId: app-vgLfYXYRR2BJQo69d4G5ZLKK
+appName: shoppinghouse
+description: First application
+imageURL: http://image.com/image
+version: 1.0.0
+microservices:
+  CartService:
+    serviceName: cartservice
+  OrderService:
+    serviceName: orderservice
+    serviceEvaluation:
+      kubeConfigType:
+      - statefulSetBased
+  UserService:
+    serviceName: userservice
+evaluationResult:
+  language: Java
+  database: MySQL
+  microservices:
+  - CartService
+  - OrderService
+  - UserService
